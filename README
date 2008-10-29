@@ -1,3 +1,7 @@
+Tweaked by Goodwill: 
+
+Now the authentication type parameter has a special magic: if it starts with tls_ then it would call the tls enabled send function, otherwise it would just fallback to the original unencrypted send. The text after tls_ are still taken into the smtp method as the original authentication type value
+
 = SMTP_TLS + ActionMailer + Gmail
 
 Configure Rails To Use Gmail's SMTP
