@@ -1,0 +1,40 @@
+8
+
+dir
+90
+svn+ssh://prd1.gearboxsoft.com/home/svnuser/svn/teamlink/trunk/vendor/plugins/action_mailer_tls/sample
+svn+ssh://prd1.gearboxsoft.com/home/svnuser/svn/teamlink
+
+
+
+2008-10-03T07:54:36.594491Z
+90
+goodwill
+
+
+svn:special svn:externals svn:needs-lock
+
+mailer.yml.sample
+file
+
+
+
+
+2008-10-03T05:02:37.000000Z
+949527f05650a091554a674bb5f734ae
+2008-10-03T07:54:36.594491Z
+90
+goodwill
+
+smtp_gmail.rb
+file
+
+
+
+
+2008-10-03T05:15:20.000000Z
+3f6f8b5fc9e2557d48f07897cc0a6409
+2008-10-03T07:54:36.594491Z
+90
+goodwill
+
