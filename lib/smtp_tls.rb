@@ -3,11 +3,12 @@ require "net/smtp"
 
 Net::SMTP.class_eval do
   private
-  alias_method :do_start, :do_start_orig
+  alias_method :do_start_orig, :do_start
   def do_start(helodomain, user, secret, authtype)
     # try to extract parameter authtype
-    if (authtype[0..2].downcase=="tls")
-      real_authtype=authtype[3..authtype.length-1]
+    authtype=authtype.to_s if (authtype.kind_of?(Symbol)) 
+    if (authtype[0..3].downcase=="tls_")
+      real_authtype=authtype[4..authtype.length-1]
       do_start_tls(helodomain, user, secret, real_authtype)
     else
       do_start_orig(helodomain, user,secret, authtype)
